@@ -46,7 +46,7 @@ new class extends Client {
             command.execute(message);
         });
 
-        this.login(this.config.token);
+        this.login(process.env.TOKEN);
     }
 
     async clearCache() {
