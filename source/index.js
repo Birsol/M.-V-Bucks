@@ -25,7 +25,7 @@ new class extends Client {
         this.lastGiveawayCache = new Collection();
 
         this.on('ready', () => {
-            this.user.setActivity("Faire gagner des V-Bucks");
+            this.user.setActivity("faire gagner des V-Bucks");
             if (cache.length) cache.forEach(g => new Giveaway(this, null, g.match, g));
             this.clearCache();
         });
